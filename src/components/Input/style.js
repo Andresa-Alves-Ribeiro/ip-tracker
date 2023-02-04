@@ -2,12 +2,12 @@ import styled from 'styled-components';
 
 export const InputBox = styled.div`
 
-width: 87%;
-max-width: 450px;
+width: 100%;
+max-width: 500px;
 height: 45px;
 
 input {
-    height: 100%;
+    height: 40px;
     width: 90%;
     border-top-left-radius:12px;
     border-bottom-left-radius:12px;
@@ -22,7 +22,7 @@ input {
 
 button {
         background: #000;
-        height:100%;
+        height:104%;
         width:10%;
         border-top-right-radius:12px;
         border-bottom-right-radius:12px;

@@ -1,6 +1,5 @@
 import React from "react";
-//import Loading from "../Loading/Loading";
-import { Address, Loading } from "./style";
+import { Address, Loading, VerticalLine } from "./style";
 
 export default function AddressContainer({ data }) {
     const { query, city, countryCode, timezone, isp } = data;
@@ -8,11 +7,13 @@ export default function AddressContainer({ data }) {
     let location = false || city + countryCode;
 
     return (
-        <div>
+        <Address>
             <span>
                 <p>Endereço IP</p>
                 <div>{query || <Loading id="loading" />}</div>
             </span>
+
+            <VerticalLine></VerticalLine>
 
             <span>
                 <p>Localização</p>
@@ -26,15 +27,19 @@ export default function AddressContainer({ data }) {
                 </div>
             </span>
 
+            <VerticalLine></VerticalLine>
+
             <span>
                 <p>Fuso horário</p>
                 <div>{timezone || <Loading id="loading" />}</div>
             </span>
 
+            <VerticalLine></VerticalLine>
+
             <span>
                 <p>isp</p>
                 <div>{timezone || <Loading id="loading" />}</div>
             </span>
-        </div>
+        </Address>
     )
 }
