@@ -1,4 +1,3 @@
-import { getDefaultNormalizer } from "@testing-library/react";
 import React, { useState, useEffect } from "react";
 import AddressContainer from "./components/AddressContainer/AddressContainer";
 import Header from "./components/Header/Header";
@@ -30,7 +29,7 @@ function App() {
 
       <Header>
         <Input ipState={[ip, setIp]} search={resultData} />
-        <AddressContainer/>
+        <AddressContainer data={result} />
       </Header>
     </>
   );
