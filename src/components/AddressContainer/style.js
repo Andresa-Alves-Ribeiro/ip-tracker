@@ -2,13 +2,12 @@ import styled from 'styled-components';
 
 export const Loading = styled.aside`
 
-    color:#CCC;
-    border:3px solid ;
-    border-color: #eee #eee #eee transparent;
-    width:20px;
-    height:20px;
-    border-radius:50%;
-
+    color: blue;
+    border: 3px solid;
+    border-color: blue blue blue transparent;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
 `;
 
 export const Address = styled.div`
@@ -54,7 +53,6 @@ export const Address = styled.div`
         }
 
     }
-
 `;
 
 export const VerticalLine = styled.div`
