@@ -14,6 +14,13 @@ const GlobalStyle = createGlobalStyle`
     button {
         cursor: pointer;
     }
+
+    .leaflet-container{
+        width:100%;
+        height:100%;
+        transition:1s;
+    }
+
 `
 
 export default GlobalStyle

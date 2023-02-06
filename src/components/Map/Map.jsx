@@ -3,6 +3,7 @@ import L from "leaflet";
 import iconLc from "../../assets/icon-location.svg";
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
 import { MyMap } from "./style";
+import 'leaflet/dist/leaflet.css';
 
 export default function Map({ lat, lon }) {
 
