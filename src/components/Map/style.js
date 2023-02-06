@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const MyMap = styled.div`
-    width:100%;
-    height: 100%;
-    
+    width:100vw;
+    height: calc(150vh - 280px);
 `;

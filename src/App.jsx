@@ -12,6 +12,7 @@ function App() {
   const [ip, setIp] = useState("")
   const [result, setResult] = useState("")
 
+
   const resultData = async (ipNumber) => {
     const search = await getData(ipNumber);
 
@@ -32,10 +33,9 @@ function App() {
       <Header>
         <Input ipState={[ip, setIp]} search={resultData} />
         <AddressContainer data={result} />
-        <Map lat={result.lat || -50} lon={result.lon || 10}/>
       </Header>
+      <Map lat={result.lat || -50} lon={result.lon || 10} />
 
-      
     </>
   );
 }

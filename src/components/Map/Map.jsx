@@ -6,21 +6,23 @@ import { MyMap } from "./style";
 
 export default function Map({ lat, lon }) {
 
-    const Location = new L.Icon({
+    const iconLocation = new L.Icon({
         iconUrl: iconLc,
-        iconSize: new L.Point(60, 60),
+        iconSize: new L.Point(40, 40),
         className: 'leaflet-icon-location'
     });
 
+    const position = [lat, lon];
+
     return (
         <MyMap>
-            <MapContainer center={[lat, lon]} zoom={17}>
+            <MapContainer center={position} zoom={17} style={{ width: "100%", height: "100%" }}>
                 <TileLayer
-                    attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
-                    url="https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png"
+                    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-
-                <Marker position={[lat, lon]} icon={Location} />
+                <Marker position={position} icon={iconLocation}>
+                </Marker>
             </MapContainer>
         </MyMap>
     )
