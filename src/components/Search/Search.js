@@ -1,6 +1,6 @@
 import React from 'react';
 import { InputBox } from "./style";
-import BotaoEnviar from '../../assets/icon-arrow.svg'
+import BotaoEnviar from '../../assets/images/icon-arrow.svg'
 
 export default function Input({ipState, search}) {
 
