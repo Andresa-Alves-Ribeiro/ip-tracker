@@ -2,11 +2,11 @@ import React from 'react';
 
 import { MyMap } from "./style";
 
-import { Map as MapContent, TileLayer, Marker, Popup } from "react-leaflet";
+import { Map as MapContent, TileLayer, Marker } from "react-leaflet";
 
 import L from "leaflet";
 
-import iconLc from "../../assets/images/icon_location.png";
+import iconLc from "../../assets/icon_location.png";
 
 export default function Map({lat,lon}) {
 
