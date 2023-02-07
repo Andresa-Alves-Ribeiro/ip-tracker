@@ -4,8 +4,6 @@ import { Address, Loading, VerticalLine } from "./style";
 export default function AddressContainer({ data }) {
     const { query, city, countryCode, timezone, isp } = data;
 
-    let location = false || city + countryCode;
-
     return (
         <Address>
 

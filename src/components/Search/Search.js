@@ -10,11 +10,10 @@ export default function Input({ipState, search}) {
         setIp(e.target.value)
     }
 
-
     return (
         <InputBox>
             <input type="text" value={ip} onChange={handleChange} placeholder="Search for any IP Address..." />
-            <button onClick={() => search(ip)}><img src={BotaoEnviar}></img></button>
+            <button onClick={() => search(ip)}><img src={BotaoEnviar} alt='botão enviar'></img></button>
         </InputBox>
     )
 }

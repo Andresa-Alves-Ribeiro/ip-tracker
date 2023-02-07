@@ -7,7 +7,7 @@ max-width: 500px;
 height: 45px;
 
 input {
-    height: 40px;
+    height: 42px;
     width: 90%;
     border-top-left-radius:12px;
     border-bottom-left-radius:12px;
@@ -22,13 +22,13 @@ input {
 
 button {
         background: #000;
-        height:104%;
-        width:10%;
-        border-top-right-radius:12px;
-        border-bottom-right-radius:12px;
+        height: 43px;
+        width: 10%;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
         color: #fff;
-        font-weight:700;
-        transition:.4s;
+        font-weight: 700;
+        transition: .4s;
         :hover{
             background: #333;
         }
