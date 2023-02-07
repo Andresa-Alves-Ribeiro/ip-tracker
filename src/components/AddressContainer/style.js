@@ -20,10 +20,11 @@ export const Address = styled.div`
     display: flex;
     flex-direction:row;
     box-shadow: 10px 20px 40px -20px rgba(0,0,0,.2);
-    padding: 25px 0 10px 0;
+    z-index: 1001;
+    padding: 45px 0 20px 0;
 
     span {
-        margin: 0 auto 10px auto;
+        margin: 0 auto;
         text-align: start;
         line-height: 26px;
 
@@ -38,7 +39,6 @@ export const Address = styled.div`
         > div {
             font-size:1.3em;
             font-weight: 600;
-            margin:5px 0;
             color:var(--very-dark-gray);
 
         }

@@ -1,109 +1,88 @@
-# Frontend Mentor - IP address tracker
+<h1 align="center"> IP Address Tracker</h1>
 
-![Design preview for the IP address tracker coding challenge](./design/desktop-preview.jpg)
 
-## Welcome! 👋
+<p align="center">
+ <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=5468CE&labelColor=535353" alt="PRs welcome!" />
 
-Thanks for checking out this front-end coding challenge.
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=5468CE&labelColor=535353">
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+  <img alt="languages" src="https://img.shields.io/github/languages/count/DaniloLima122/ip-adress-tracker?color=5468CE">
 
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
+  <img alt="size" src="https://img.shields.io/github/repo-size/DaniloLima122/ip-adress-tracker?color=5468CE">
 
-## The challenge
+</p>
 
-Your challenge is to build out this IP Address Tracker app and get it looking as close to the design as possible. To get the IP Address locations, you'll be using the [IP Geolocation API by IPify](https://geo.ipify.org/). To generate the map, we recommend using [LeafletJS](https://leafletjs.com/).
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+&nbsp;
 
-Your users should be able to:
 
-- View the optimal layout for each page depending on their device's screen size
-- See hover states for all interactive elements on the page
-- See their own IP address on the map on the initial page load
-- Search for any IP addresses or domains and see the key information and location
+### Aplicação de rastreamento de localização através do IP
 
----
 
-⚠️ **IMPORTANT** ⚠️: To use the IP Geolocation API by IPify, you'll need to sign up for a free account. You won't need to add any cards details to do this and it's a very quick process. This will generate an API Key for you. Usually, you would be able to restrict your API Key to a specific URL (your own domain). This makes sure that other people can't use your API Key on their own websites. IPify doesn't have this feature, but because you aren't adding your card details, this isn't an issue. **So be sure to only sign up for the free account and DO NOT enter any card details**.
+&nbsp;
 
-For the mapping API, we recommend using [LeafletJS](https://leafletjs.com/). It's free to use and doesn't require an API Key. If you decide to use another API, like Google Maps or Mapbox, be sure to secure your API Key. Here are guides for both Google Maps and Mapbox, be sure to read through them thoroughly:
+![](src/assets/images/site.png)
 
-- [API Key best practices from Google Developers](https://developers.google.com/maps/api-key-best-practices)
-- [How to use Mapbox securely](https://docs.mapbox.com/help/troubleshooting/how-to-use-mapbox-securely/)
 
-Exposing your API Key publicly can lead to other people using it to make requests for their own application if the proper precautions aren't in place. Please be sure you read the guides thoroughly and follow their recommendations.
+Este é um projeto baseado em um desafio da plataforma Front end Mentor, o desafio original consiste em criar uma aplicação de rastreamento de IP com JavaScript puro consumindo uma API e usando uma biblioteca para gerar mapas, porém resolvi criar em ReactJS para praticar mais.
 
-**We don't take any responsibility if you expose your API Key while completing the challenge and have not secured it.**
+## Tecnologias
 
----
+- [ReactJS](https://pt-br.reactjs.org/)
+- [Styled Components](https://styled-components.com/)
+- [Leaflet](https://leafletjs.com/)
+- [IP API](https://ip-api.com/)
+- [Axios](https://www.npmjs.com/package/axios)
+  
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+## Rodando o projeto
 
-## Where to find everything
+Para explorar o projeto na sua máquina primeiro certifique-se que você tem o Git e o Node.JS instalado, se não tiver acesse os links na seção LINKS, para baixar.
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+1º- Com o git pré-instalado clone o projeto:
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+~~~shell
+git clone https://github.com/DaniloLima122/ip-adress-tracker.git
+~~~
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+2º - Navegue até o a pasta que você clonou no passo anterior e instale as dependencias do projeto, digitando:
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+~~~shell
+npm install
+~~~
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+ou, se você usa o Yarn como gerenciador de pacotes é só digitar:
 
-## Building your project
+~~~shell
+yarn install
+~~~
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+4º - Abra a pasta que você clonou no seu editor de preferência
 
-## Deploying your project
+5º - Agora é só abrir o projeto no seu navegador digitando no seu terminal:
+~~~shell
+npm start
+~~~
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+ou, se você usa o Yarn digite:
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+~~~shell
+yarn start
+~~~
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
 
-## Create a custom `README.md`
+## Contribuições
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+Fique a vontade para avaliar o repositório dando uma "star" ou contribuir com o projeto e reportar sobre bugs e dar sugestões de melhorias.
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+## Links
 
-## Submitting your solution
+- Instalação do [Git](https://git-scm.com/)
+- Instalação do [Node.js](https://nodejs.org/en/download/) 
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+## Licença
+- [MIT](LICENSE)
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
 
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
