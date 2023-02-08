@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import Headerbg from "../../assets/images/pattern-bg.png";
+import Headerbg from "../../assets/pattern-bg.png";
 
 export const ContainerHeader = styled.header`
 

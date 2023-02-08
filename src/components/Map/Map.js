@@ -8,7 +8,7 @@ import "leaflet/dist/leaflet.css";
 
 import L from "leaflet";
 
-import iconLc from "../../assets/images/icon_location.png";
+import iconLc from "../../assets/icon_location.png";
 
 export default function Map({lat,lon}) {
 
