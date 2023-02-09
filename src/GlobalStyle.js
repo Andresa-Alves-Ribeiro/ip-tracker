@@ -4,14 +4,6 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
 
 
-
-    :root{
-        /* colors */
-        --very-dark-gray:  hsl(0, 0%, 17%);
-        --dark-gray: hsl(0, 0%, 59%); 
-
-    }
-
     *{
         margin: 0;
         padding:0;
@@ -19,8 +11,6 @@ const GlobalStyle = createGlobalStyle`
         outline:0;
         border:0;
         font-family: 'Rubik',sans-serif;
-
-
     }
 
     button{
@@ -39,7 +29,6 @@ const GlobalStyle = createGlobalStyle`
         width:100%;
         height:100%;
         transition:1s;
-        /* z-index:-1; */
     }
 
 `;

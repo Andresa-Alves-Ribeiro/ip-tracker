@@ -6,7 +6,6 @@ export const ContainerHeader = styled.header`
 
     width: 100%;
     height: 300px;
-    /* border:1px solid red; */
     background: url(${Headerbg}) no-repeat;
     background-size:cover;
     display:flex;
@@ -22,7 +21,6 @@ export const ContainerHeader = styled.header`
     }
 
     @media(min-width:700px){
-     
         height:280px;
     }
 `;

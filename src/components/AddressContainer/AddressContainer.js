@@ -8,14 +8,14 @@ export default function AddressContainer({ data }) {
         <Address>
 
             <span>
-                <p>Endereço do IP</p>
+                <p>IP Address</p>
                 <div>{query || < Loading id="loading" />} </div>
             </span>
 
             <VerticalLine></VerticalLine>
 
             <span>
-                <p>Localização</p>
+                <p>Location</p>
                 <div>{
                     <span>
                     
@@ -29,7 +29,7 @@ export default function AddressContainer({ data }) {
             <VerticalLine></VerticalLine>
 
             <span>
-                <p>Fuso horário</p>
+                <p>Timezone</p>
                 <div>{timezone || < Loading id="loading" />}</div>
             </span>
 
