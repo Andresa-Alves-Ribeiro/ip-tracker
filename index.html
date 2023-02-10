@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="sass/main.css" />
+
+    <title>IP Address Tracker</title>
+  </head>
+  
+  <body>
+    <main>
+      <header class="header">
+        <h1 class="header__title">IP Address Tracker</h1>
+        <div class="input">
+          <input
+            type="text"
+            class="input__field"
+            placeholder="Search for any IP address or domain"
+          />
+          <button class="input__btn" aria-label="Enter">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
+              <path
+                fill="none"
+                stroke="#FFF"
+                stroke-width="3"
+                d="M2 1l6 6-6 6"
+              />
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <div class="card">
+        <div class="item">
+          <h2 class="item__title">IP Address</h2>
+          <h3 class="item__content card-content" id="ip"></h3>
+        </div>
+        <div class="item">
+          <h2 class="item__title">Location</h2>
+          <h3 class="item__content">
+            <span class="card-content" id="city"> </span>
+            <span class="card-content" id="country"> </span>
+            <span class="card-content" id="geoId"> </span>
+          </h3>
+        </div>
+        <div class="item">
+          <h2 class="item__title">Timezone</h2>
+          <h3 class="item__content card-content" id="timezone"></h3>
+        </div>
+        <div class="item">
+          <h2 class="item__title">ISP</h2>
+          <h3 class="item__content card-content" id="isp"></h3>
+        </div>
+      </div>
+
+      <div class="map" id="map" role="application"></div>
+    </main>
+
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

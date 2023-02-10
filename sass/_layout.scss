@@ -1,0 +1,53 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  background-image: url(../images/pattern-bg.png);
+  background-size: cover;
+  width: 100%;
+  height: 270px;
+  text-align: center;
+  padding: 3rem 5%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+
+  &__title {
+    color: var(--color-white);
+    font-size: 2.9rem;
+    font-weight: 500;
+
+    @include respond(phone) {
+      font-size: 2.6rem;
+    }
+  }
+}
+
+.card {
+  position: absolute;
+  top: 190px;
+  align-self: center;
+  width: 75%;
+  border-radius: 20px;
+  z-index: 10;
+
+  @include respond(tablet) {
+    width: 90%;
+  }
+
+  @include respond(phone) {
+    top: 165px;
+  }
+}
+
+#map {
+  width: 100vw;
+  height: calc(100vh - 270px);
+  z-index: 0;
+}
