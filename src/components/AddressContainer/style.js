@@ -21,7 +21,7 @@ export const Address = styled.div`
     flex-direction:row;
     box-shadow: 10px 20px 40px -20px rgba(0,0,0,.2);
     z-index: 1001;
-    padding: 45px 0 20px 0;
+    padding: 35px 0 20px 0;
 
     span {
         margin: 0 auto;
@@ -36,11 +36,11 @@ export const Address = styled.div`
             letter-spacing: 0.5px;
         }
     
-        > div {
-            font-size:1.3em;
+        > div, label {
+            font-size: 1.3rem;
             font-weight: 600;
             color:var(--very-dark-gray);
-
+            margin-top: 0.5rem;
         }
 
         #loading {
@@ -58,4 +58,48 @@ export const Address = styled.div`
 export const VerticalLine = styled.div`
 height: 70px;
 border: 0.1px solid #CCC;
+
+
+@media(max-width: 700px)
+
+    {
+        flex-direction:column;
+        margin-top: 3.2rem;
+        min-height:152px;
+        padding:35px 15px 15px 15px;
+        box-shadow: 0px 20px 40px -15px rgba(0,0,0,.2);
+        > span{
+            text-align:left;
+            height:auto;
+            width:auto;
+            > p:first-of-type{
+                font-size:.6rem;
+            }
+            
+            > div{
+                font-size:1.7rem;
+                margin-top:10px;
+                word-wrap:break-word;
+                max-width:160px;
+                width:auto;
+                max-height:70%;
+                overflow:hidden;
+                text-overflow:ellipsis;
+            }
+            #loading{
+            margin:30px auto 5px auto ;
+            animation: load 1s linear infinite;
+             }
+            :nth-child(n+2)::before{
+                content:"";
+                background: #ddd;
+                position:absolute;
+                transform:translate(-30px,0);
+                height:85px;
+                width:1px;
+            }
+        }
+    }
+
 `
+

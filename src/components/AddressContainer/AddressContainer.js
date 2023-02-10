@@ -2,14 +2,14 @@ import React from "react";
 import { Address, Loading, VerticalLine } from "./style";
 
 export default function AddressContainer({ data }) {
-    const { query, city, countryCode, timezone, isp } = data;
+    const { ip, location, isp } = data;
 
     return (
         <Address>
 
             <span>
                 <p>IP Address</p>
-                <div>{query || < Loading id="loading" />} </div>
+                <div className="font-data">{ip || < Loading id="loading" />} </div>
             </span>
 
             <VerticalLine></VerticalLine>
@@ -17,12 +17,13 @@ export default function AddressContainer({ data }) {
             <span>
                 <p>Location</p>
                 <div>{
-                    <span>
-                    
-                        <label>{city}</label><br/>
-                        <label>{countryCode}</label>
-                    
-                    </span> || < Loading id="loading" />} 
+                    location ?
+                        <span>
+                            <label className="font-data">{location.city}</label><br />
+                            <label>{location.country}</label>
+                        </span>
+                        : <Loading id="loading" />
+                }
                 </div>
             </span>
 
@@ -30,14 +31,21 @@ export default function AddressContainer({ data }) {
 
             <span>
                 <p>Timezone</p>
-                <div>{timezone || < Loading id="loading" />}</div>
+                <div>{
+                    location ?
+                        <span className="font-data">
+                            <div>UTC{location.timezone || < Loading id="loading" />}</div>
+                        </span>
+                        : <Loading id="loading" />
+                }
+                </div>
             </span>
 
             <VerticalLine></VerticalLine>
 
             <span>
                 <p>isp</p>
-                <div>{isp || < Loading id="loading" />}</div>
+                <div className="font-data">{isp || < Loading id="loading" />}</div>
             </span>
         </Address>
     )

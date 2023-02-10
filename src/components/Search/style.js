@@ -19,7 +19,6 @@ input {
         }
 }
 
-
 button {
         background: #000;
         height: 43px;

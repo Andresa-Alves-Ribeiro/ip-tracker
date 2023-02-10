@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 import Search from "./components/Search/Search";
 import Map from "./components/Map/Map";
 import GlobalStyle from "./GlobalStyle";
-import getData from "./services/axios";
+import getAPI from "./services/axios";
 
 function App() {
 
@@ -13,7 +13,7 @@ function App() {
 
 
   const resultData = async (ipNumber) => {
-    const search = await getData(ipNumber);
+    const search = await getAPI(ipNumber);
 
     if (search.status === 200) {
       setResult(search.data)
@@ -33,7 +33,7 @@ function App() {
         <Search ipState={[ip, setIp]} search={resultData} />
         <AddressContainer data={result} />
       </Header>
-      <Map lat={result.lat || -50} lon={result.lon || 10} />
+      <Map lat={result.lat || -50} lng={result.lng || 10} />
 
     </>
   );
