@@ -3,8 +3,8 @@
 const inputField = document.querySelector(".input__field");
 const cardContents = document.querySelectorAll(".card-content");
 
-////////////////////////////////////////
-//getting data from API
+////////////////// PEGAR DADOS DA API DE LOCALIZAÇÃO //////////////////////
+
 let map;
 
 const fetchData = function (ipUser = "") {
@@ -31,7 +31,8 @@ const fetchData = function (ipUser = "") {
         data.isp
       );
 
-      //adding map to UI
+      //ADICIONAR MAPA NO UI
+
       showLocationMap(lat, lng);
     })
     .catch((err) => {
@@ -40,8 +41,8 @@ const fetchData = function (ipUser = "") {
     });
 };
 
-////////////////////////////////////////
-//error function
+///////////////// FUNÇÃO DE ERRO ///////////////////////
+
 const errorHandler = function () {
   inputField.classList.add("error-theme");
   inputField.placeholder = "Insert a valid IP address!";
@@ -51,8 +52,8 @@ const errorHandler = function () {
   });
 };
 
-////////////////////////////////////////
-//generate map
+///////////////// GERAR MAPA COM API DA GOOGLE ///////////////////////
+
 const generateMap = function (lat, lng) {
   map = L.map("map", { zoomControl: false }).setView([lat, lng], 17);
 
@@ -74,8 +75,8 @@ const generateMap = function (lat, lng) {
     .addTo(map);
 };
 
-////////////////////////////////////////
-//adding map to UI
+/////////////////// ADICIONAR MAPA NO UI /////////////////////
+
 const showLocationMap = function (lat, lng) {
   if (map != null) {
     map.remove();
@@ -85,10 +86,11 @@ const showLocationMap = function (lat, lng) {
   }
 };
 
-////////////////////////////////////////
-//adding information on cards
+////////////////// ADICIONAR INFORMAÇÃO NO CONTAINER //////////////////////
 
-//Event listener: input button
+////////////////// EVENT LISTENERS //////////////////////
+
+// Event listener: input button
 document.querySelector(".input__btn").addEventListener("click", () => {
   cardDetails();
 });
@@ -102,16 +104,12 @@ const cardDetails = function (ip, city, country, geoId, timezone, isp) {
   document.querySelector("#isp").textContent = `${isp}`;
 };
 
-////////////////////////////////////////
-//EVENT LISTENERS
-
-//open user location on map as user loads
+// abrir a localização do usuário no mapa conforme o usuário carrega
 document.addEventListener("DOMContentLoaded", (e) => {
   fetchData();
 });
 
-//input button click
-
+//input button
 document.querySelector(".input__btn").addEventListener("click", () => {
   if (inputField.value.trim() !== "") {
     fetchData(inputField.value);
@@ -121,8 +119,8 @@ document.querySelector(".input__btn").addEventListener("click", () => {
   }
 });
 
-//user click input
+// input do usuario
 document.querySelector(".input__field").addEventListener("click", () => {
   inputField.classList.remove("error-theme");
-  inputField.placeholder = "Search for any IP address or domain";
+  inputField.placeholder = "Search for any IP address or domain...";
 });
