@@ -26,7 +26,6 @@ const fetchData = function (ipUser = "") {
         data.ip,
         data.location.city,
         data.location.country,
-        data.location.geonameId,
         data.location.timezone,
         data.isp
       );
@@ -95,11 +94,10 @@ document.querySelector(".input__btn").addEventListener("click", () => {
   cardDetails();
 });
 
-const cardDetails = function (ip, city, country, geoId, timezone, isp) {
+const cardDetails = function (ip, city, country, timezone, isp) {
   document.querySelector("#ip").textContent = `${ip}`;
   document.querySelector("#city").textContent = `${city}, `;
   document.querySelector("#country").textContent = `${country}`;
-  document.querySelector("#geoId").textContent = `${geoId}`;
   document.querySelector("#timezone").textContent = `UTC ${timezone}`;
   document.querySelector("#isp").textContent = `${isp}`;
 };
