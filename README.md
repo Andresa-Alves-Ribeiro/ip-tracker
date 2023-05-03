@@ -1,5 +1,5 @@
 <h1 align="center"> 
-	 IP Address Tracker
+	IP Address Tracker
 </h1>
 
 <p align="center">
@@ -14,10 +14,12 @@
 &nbsp;
 
 **Desktop View**
-[![Screenshot-2021-08-31-at-02-06-27-Frontend-Mentor-IP-Address-Tracker.png](https://i.postimg.cc/x1xGRykt/Screenshot-2021-08-31-at-02-06-27-Frontend-Mentor-IP-Address-Tracker.png)](https://postimg.cc/cv3813Bn)
+![web](https://user-images.githubusercontent.com/94997593/236068603-8b04db1f-3476-477a-981b-a09df159fa0b.png)
+
 
 **Mobile View** <br/>
-[![Screenshot-2021-08-31-at-02-09-15-Frontend-Mentor-IP-Address-Tracker.png](https://i.postimg.cc/vZkgTPxF/Screenshot-2021-08-31-at-02-09-15-Frontend-Mentor-IP-Address-Tracker.png)](https://postimg.cc/pmQX1JBq)
+![mobile](https://user-images.githubusercontent.com/94997593/236068627-d5bab910-10aa-4dcd-a8ab-8df25326683e.png)
+
 
 &nbsp;
 <a id="-sobre-o-projeto"></a>
